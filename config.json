@@ -1,0 +1,502 @@
+{
+	"title": "ASICMINER",
+	"header": "MinerMonitor",
+	"miner_poll": 8000,
+	"miner_timeout": 5000,
+	"web_refresh": 10000,
+	"tolerance": 5,
+	"temperature": 80,
+	"temperature2": 90,
+	"hashrates": 100,
+	"animation": true,
+	"log_level": "INFO",
+	"miners": [
+{
+"name": "나1A1",
+"host": "172.16.111.1",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_lee045222.001_이동선",
+"offline": false
+},
+{
+"name": "나1A2",
+"host": "172.16.111.2",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_lee045222.002_이동선",
+"offline": false
+},
+{
+"name": "나1A3",
+"host": "172.16.111.3",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_zx1674.S9054_㈜태강",
+"offline": false
+},
+{
+"name": "나1A4",
+"host": "172.16.111.4",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_seojooyeon.005_서주연",
+"offline": false
+},
+{
+"name": "나1A5",
+"host": "172.16.111.5",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_wellkks.tm03_김경섭",
+"offline": false
+},
+{
+"name": "나1A6",
+"host": "172.16.111.6",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_bluejhsppy.002_이정선",
+"offline": false
+},
+{
+"name": "나1A7",
+"host": "172.16.111.7",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_cks5531.001_최근수",
+"offline": false
+},
+{
+"name": "나1A8",
+"host": "172.16.111.8",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_bluejhsppy.001_이정선",
+"offline": false
+},
+{
+"name": "나1A9",
+"host": "172.16.111.9",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_jjajan.001_이종완",
+"offline": false
+},
+{
+"name": "나1A10",
+"host": "172.16.111.10",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_ukmine.002_최연주",
+"offline": false
+},
+{
+"name": "나1A11",
+"host": "172.16.111.11",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_seungtaik.187_백승택",
+"offline": true
+},
+{
+"name": "나1A13",
+"host": "172.16.111.13",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "A3_ce688f8f74ee8e0c7548b77b69f004_누구",
+"offline": false
+},
+{
+"name": "나1A14",
+"host": "172.16.111.14",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "A3_ce688f8f74ee8e0c7548b77b69f004_누구",
+"offline": false
+},
+{
+"name": "나1A15",
+"host": "172.16.111.15",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_pswinsu.001_박상원",
+"offline": false
+},
+{
+"name": "나1A16",
+"host": "172.16.111.16",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_ollyrolly.007_정유선",
+"offline": false
+},
+{
+"name": "나1A17",
+"host": "172.16.111.17",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_ollyrolly.002_정유선",
+"offline": false
+},
+{
+"name": "나1A18",
+"host": "172.16.111.18",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_kky7318.001_김광연",
+"offline": false
+},
+{
+"name": "나1A19",
+"host": "172.16.111.19",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_kky7318.002_김광연",
+"offline": false
+},
+{
+"name": "나1A20",
+"host": "172.16.111.20",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_kky7318.003_김광연",
+"offline": false
+},
+{
+"name": "나1A21",
+"host": "172.16.111.21",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_kky7318.004_김광연",
+"offline": false
+},
+{
+"name": "나1A22",
+"host": "172.16.111.22",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_ce688f8f74ee8e0c7548b77b69f004_누구",
+"offline": false
+},
+{
+"name": "나1A24",
+"host": "DHCP",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "BAIKAL GIANTB_장현기.바이칼지갑주소_장현기",
+"offline": true
+},
+{
+"name": "나1A25",
+"host": "DHCP",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "BAIKAL GIANTB_장현기.바이칼지갑주소_장현기",
+"offline": true
+},
+{
+"name": "나1A26",
+"host": "172.16.111.26",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_cbh8333.008_최범현",
+"offline": false
+},
+{
+"name": "나1A30",
+"host": "172.16.111.30",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "A3_eliteda.001_이순호_1장수리불가",
+"offline": false
+},
+{
+"name": "나1A31",
+"host": "172.16.111.31",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_j47043333.009_장민석",
+"offline": false
+},
+{
+"name": "나1A33",
+"host": "172.16.111.33",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_cbh8333.060_최범현",
+"offline": false
+},
+{
+"name": "나1A34",
+"host": "172.16.111.34",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_seungtaik.138_백승택",
+"offline": true
+},
+{
+"name": "나1A35",
+"host": "172.16.111.35",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_cbh8333.009_최범현",
+"offline": false
+},
+{
+"name": "나1A39",
+"host": "172.16.111.39",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_danielkorea.001_안종호",
+"offline": false
+},
+{
+"name": "나1A40",
+"host": "172.16.111.40",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_skawjdgh.001_남정호",
+"offline": false
+},
+{
+"name": "나1A41",
+"host": "172.16.111.41",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_seungtaik.126_백승택",
+"offline": true
+},
+{
+"name": "나1A42",
+"host": "172.16.111.42",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_luckyguy77.001_윤명호",
+"offline": true
+},
+{
+"name": "나1A44",
+"host": "172.16.111.44",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_tgmf.001_㈜태강",
+"offline": false
+},
+{
+"name": "나1A45",
+"host": "172.16.111.45",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_tgmf.002_㈜태강",
+"offline": false
+},
+{
+"name": "나1A46",
+"host": "172.16.111.46",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_tgmf.003_㈜태강",
+"offline": false
+},
+{
+"name": "나1A47",
+"host": "172.16.111.47",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_ycs1811.001_윤석민",
+"offline": false
+},
+{
+"name": "나1A48",
+"host": "172.16.111.48",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_tgmf.004_㈜태강",
+"offline": false
+},
+{
+"name": "나1A49",
+"host": "172.16.111.49",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_tgmf.005_㈜태강",
+"offline": false
+},
+{
+"name": "나1A50",
+"host": "172.16.111.50",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_tgmf.006_㈜태강",
+"offline": false
+},
+{
+"name": "나1A51",
+"host": "172.16.111.51",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "S9_ywszipperbch.001_이원래",
+"offline": false
+},
+{
+"name": "나1A51",
+"host": "172.16.111.51",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.008_㈜태강(1공장)",
+"offline": true
+},
+{
+"name": "나1A52",
+"host": "172.16.111.52",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.009_㈜태강",
+"offline": false
+},
+{
+"name": "나1A53",
+"host": "172.16.111.53",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.010_㈜태강",
+"offline": false
+},
+{
+"name": "나1A54",
+"host": "172.16.111.54",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.011_㈜태강",
+"offline": false
+},
+{
+"name": "나1A55",
+"host": "172.16.111.55",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.012_㈜태강",
+"offline": false
+},
+{
+"name": "나1A56",
+"host": "172.16.111.56",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.013_㈜태강",
+"offline": false
+},
+{
+"name": "나1A57",
+"host": "172.16.111.57",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.014_㈜태강",
+"offline": false
+},
+{
+"name": "나1A58",
+"host": "172.16.111.58",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.015_㈜태강",
+"offline": false
+},
+{
+"name": "나1A59",
+"host": "172.16.111.59",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.016_㈜태강",
+"offline": false
+},
+{
+"name": "나1A60",
+"host": "172.16.111.60",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.017_㈜태강",
+"offline": false
+},
+{
+"name": "나1A61",
+"host": "172.16.111.61",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.018_㈜태강",
+"offline": false
+},
+{
+"name": "나1A62",
+"host": "172.16.111.62",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.019_(주)태강",
+"offline": false
+},
+{
+"name": "나1A63",
+"host": "172.16.111.63",
+"port": 4028,
+"type": "S9",
+"target_hash": 0,
+"comments": "D3_zx1674.020_㈜태강",
+"offline": false
+}
+
+]
+}

@@ -1,0 +1,219 @@
+body {
+  margin-top: 100px;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  line-height: 1.6
+}
+
+h2 {
+  margin: 0 0 .5em 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#wrapper {
+  position: relative;
+}
+
+#minerInfo {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+#minerInfo table {
+  background: #CCC;
+  position: relative;
+  width: 100%;
+}
+#minerInfo table th {
+  background: #EEE;
+  text-align: center;
+}
+#minerInfo table tbody {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+#minerInfo table td {
+  background: #FFF;
+  text-align: center;
+  padding: 3px 3px;
+}
+
+#lastUpdated {
+  font-size: 90%;
+}
+.zerohash{
+    color: darkred;
+    font-weight: bolder
+}
+.error {
+  color: red;
+  font-weight: bolder
+}
+
+.warning {
+  color: darkorange;
+  font-weight: bolder
+}
+.goodhash{
+  color: blue;
+  font-weight: bolder
+}
+.offline{
+  color: #CCCCCC;
+  font-weight: bolder
+}
+.normal{
+  color: black;
+  font-weight: bolder
+}
+.offline2{
+  color: slategrey;
+  font-weight: bolder
+}
+/* Error */
+#err-wrapper {
+  position: relative;
+}
+
+#err-minerInfo {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+#err-minerInfo table {
+  background: #CCC;
+}
+#err-minerInfo table th {
+  background: #EEE;
+  text-align: center;
+}
+#err-minerInfo table tbody {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+#err-minerInfo table td {
+  background: #FFF;
+  text-align: center;
+  padding: 3px 3px;
+}
+/* Low Hash */
+#lowhash-wrapper {
+  position: relative;
+}
+
+#lowhash-minerInfo {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+#lowhash-minerInfo table {
+  background: #CCC;
+}
+#lowhash-minerInfo table th {
+  background: #EEE;
+  text-align: center;
+}
+#lowhash-minerInfo table tbody {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+#lowhash-minerInfo table td {
+  background: #FFF;
+  text-align: center;
+  padding: 3px 3px;
+}
+/* Offline */
+#offline-wrapper {
+  position: relative;
+}
+
+#offline-minerInfo {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+#offline-minerInfo table {
+  background: #CCC;
+}
+#offline-minerInfo table th {
+  background: #EEE;
+  text-align: center;
+}
+#offline-minerInfo table tbody {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+#offline-minerInfo table td {
+  background: #FFF;
+  text-align: center;
+  padding: 3px 3px;
+}
+/* find */
+#find-wrapper {
+  position: relative;
+}
+
+#find-minerInfo {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+#find-minerInfo table {
+  background: #CCC;
+}
+#find-minerInfo table th {
+  background: #EEE;
+  text-align: center;
+}
+#find-minerInfo table tbody {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+#find-minerInfo table td {
+  background: #FFF;
+  text-align: center;
+  padding: 3px 3px;
+}
+#find input{
+  position: relative;
+  width: 30%;
+}
+#find input.find-btn{
+  width: 15%;
+  background: cornflowerblue;
+}
+/* Tab */
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul.tabs{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul.tabs li{
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+ul.tabs li.current{
+  background: #ededed;
+  color: #222;
+}
+
+.tab-content{
+  display: none;
+  background: #ededed;
+  padding: 20px;
+}
+
+.tab-content.current{
+  display: inherit;
+}

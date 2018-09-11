@@ -1,0 +1,225 @@
+{
+  "summary":[
+    {
+      "STATUS":[
+        {
+          "STATUS":"S",
+          "When":1520076562,
+          "Code":11,
+          "Msg":"Summary",
+          "Description":"cgminer 4.9.0"
+        }
+      ],
+      "SUMMARY":[
+        {
+          "Elapsed":17602,
+          "GHS 5s":"18890.8",
+          "GHS av":19336.51,
+          "Found Blocks":0,
+          "Getworks":437,
+          "Accepted":"  8.0000",
+          "Rejected":"  8.0000",
+          "Hardware Errors":532,
+          "Utility":5.57,
+          "Discarded":9627,
+          "Stale":0,
+          "Get Failures":0,
+          "Local Work":102964,
+          "Remote Failures":0,
+          "Network Blocks":110,
+          "Total MH":340367236.0000,
+          "Work Utility":270.29,
+          "Difficulty Accepted":78976.00000000,
+          "Difficulty Rejected":320.00000000,
+          "Difficulty Stale":0.00000000,
+          "Best Share":416455,
+          "Device Hardware%":0.6664,
+          "Device Rejected%":0.4036,
+          "Pool Rejected%":0.4036,
+          "Pool Stale%":0.0000,
+          "Last getwork":1520076562
+        }
+      ],
+      "id":1
+    }
+  ],
+  "pools":[
+    {
+      "STATUS":[
+        {
+          "STATUS":"S",
+          "When":1520076562,
+          "Code":7,
+          "Msg":"3 Pool(s)",
+          "Description":"cgminer 4.9.0"
+        }
+      ],
+      "POOLS":[
+        {
+          "POOL":0,
+          "URL":"stratum+tcp://stratum-dash.antpool.com:6099",
+          "Status":"Alive",
+          "Priority":0,
+          "Quota":0,
+          "Long Poll":"N",
+          "Getworks":433,
+          "Accepted":1634,
+          "Rejected":8,
+          "Discarded":9627,
+          "Stale":0,
+          "Get Failures":0,
+          "Remote Failures":0,
+          "User":"zx1674.001",
+          "Last Share Time":"0:00:01",
+          "Diff":" 32.0000",
+          "Diff1 Shares":634071,
+          "Proxy Type":"",
+          "Proxy":"",
+          "Difficulty Accepted":78976.00000000,
+          "Difficulty Rejected":320.00000000,
+          "Difficulty Stale":0.00000000,
+          "Last Share Difficulty":32.00000000,
+          "Has Stratum":true,
+          "Stratum Active":true,
+          "Stratum URL":"stratum-dash.antpool.com",
+          "Has GBT":false,
+          "Best Share":"  0.0000",
+          "Pool Rejected%":0.4036,
+          "Pool Stale%":0.0000
+        },
+        {
+          "POOL":1,
+          "URL":"stratum+tcp://stratum-dash.antpool.com:443",
+          "Status":"Alive",
+          "Priority":1,
+          "Quota":0,
+          "Long Poll":"N",
+          "Getworks":2,
+          "Accepted":0,
+          "Rejected":0,
+          "Discarded":0,
+          "Stale":0,
+          "Get Failures":0,
+          "Remote Failures":0,
+          "User":"zx1674.001",
+          "Last Share Time":"0",
+          "Diff":" 64.0000",
+          "Diff1 Shares":0,
+          "Proxy Type":"",
+          "Proxy":"",
+          "Difficulty Accepted":0.00000000,
+          "Difficulty Rejected":0.00000000,
+          "Difficulty Stale":0.00000000,
+          "Last Share Difficulty":0.00000000,
+          "Has Stratum":true,
+          "Stratum Active":false,
+          "Stratum URL":"",
+          "Has GBT":false,
+          "Best Share":"  0.0000",
+          "Pool Rejected%":0.0000,
+          "Pool Stale%":0.0000
+        },
+        {
+          "POOL":2,
+          "URL":"stratum+tcp://stratum-dash.antpool.com:25",
+          "Status":"Alive",
+          "Priority":2,
+          "Quota":0,
+          "Long Poll":"N",
+          "Getworks":2,
+          "Accepted":0,
+          "Rejected":0,
+          "Discarded":0,
+          "Stale":0,
+          "Get Failures":0,
+          "Remote Failures":0,
+          "User":"zx1674.001",
+          "Last Share Time":"0",
+          "Diff":" 64.0000",
+          "Diff1 Shares":0,
+          "Proxy Type":"",
+          "Proxy":"",
+          "Difficulty Accepted":0.00000000,
+          "Difficulty Rejected":0.00000000,
+          "Difficulty Stale":0.00000000,
+          "Last Share Difficulty":0.00000000,
+          "Has Stratum":true,
+          "Stratum Active":false,
+          "Stratum URL":"",
+          "Has GBT":false,
+          "Best Share":"  0.0000",
+          "Pool Rejected%":0.0000,
+          "Pool Stale%":0.0000
+        }
+      ],
+      "id":1
+    }
+  ],
+  "stats":[
+    {
+      "STATUS":[
+        {
+          "STATUS":"S",
+          "When":1520076562,
+          "Code":70,
+          "Msg":"CGMiner stats",
+          "Description":"cgminer 4.9.0"
+        }
+      ],
+      "STATS":[
+        {
+          "CGMiner":"4.9.0",
+          "Miner":"1.0.0.6",
+          "CompileTime":"Thu Aug 31 13:38:33 CST 2017",
+          "Type":"Antminer D3"
+        },
+        {
+          "STATS":0,
+          "ID":"D10",
+          "Elapsed":17602,
+          "Calls":0,
+          "Wait":0.000000,
+          "Max":0.000000,
+          "Min":99999999.000000,
+          "GHS 5s":"18890.8",
+          "GHS av":19336.51,
+          "miner_count":3,
+          "frequency":"537",
+          "fan_num":2,
+          "fan1":3990,
+          "fan2":4170,
+          "temp_num":3,
+          "temp1":48,
+          "temp2":48,
+          "temp3":54,
+          "temp4":0,
+          "temp2_1":68,
+          "temp2_2":67,
+          "temp2_3":72,
+          "temp2_4":0,
+          "temp_max":54,
+          "Device Hardware%":0.0833,
+          "no_matching_work":532,
+          "chain_acn1":60,
+          "chain_acn2":60,
+          "chain_acn3":60,
+          "chain_acn4":0,
+          "chain_acs1":" oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooo",
+          "chain_acs2":" oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooo",
+          "chain_acs3":" oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooooooo oooo",
+          "chain_acs4":"",
+          "chain_hw1":5,
+          "chain_hw2":527,
+          "chain_hw3":0,
+          "chain_hw4":0,
+          "chain_rate1":"6299.73",
+          "chain_rate2":"6299.07",
+          "chain_rate3":"6291.99",
+          "chain_rate4":""
+        }
+      ],
+      "id":1
+    }
+  ],
+  "id":1
+}

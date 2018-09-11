@@ -1,0 +1,154 @@
+<% include ./layout.ejs %>
+
+<div class="container">
+    <ul class="tabs">
+        <li data-tab="tab-1" class="tab-link current">전체 모니터</li>
+        <li data-tab="tab-2" class="tab-link">에러 모니터</li>
+        <li data-tab="tab-3" class="tab-link">낮은 해시 모니터</li>
+        <li data-tab="tab-4" class="tab-link">오프라인 모니터</li>
+        <li data-tab="tab-5" class="tab-link">검색</li>
+    </ul>
+    <div id="tab-1" class="tab-content current">
+        <div id="wrapper">
+            <div id="minerDashBoard">
+                <h2></h2>
+                <ul class="dashboard">
+                    <li class="info-total">전체 마이너:</li>
+                    <li class="info-manage">관리 마이너:</li>
+                    <li class="info-error">에러 마이너:</li>
+                    <li class="info-warning">워닝 마이너:</li>
+                    <li class="info-offline">오프라인 마이너:</li>
+                </ul>
+            </div>
+            <div id="minerInfo">
+                <table>
+                    <thead>
+                    <th>Name</th>
+                    <th>Host</th>
+                    <th>User</th>
+                    <th>Uptime</th>
+                    <th>Type</th>
+                    <th>Hash_5s</th>
+                    <th>Hash_av</th>
+                    <th>ChainACS</th>
+                    <th>Temp1</th>
+                    <th>pools</th>
+                    <th>state</th>
+                    <th>Comments</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <p id="lastUpdated"></p>
+    </div>
+    <div id="tab-2" class="tab-content">
+        <div id="err-wrapper">
+            <div id="err-minerInfo">
+                <h2>NaN</h2>
+                <table>
+                    <thead>
+                    <th>Name</th>
+                    <th>Host</th>
+                    <th>User</th>
+                    <th>Uptime</th>
+                    <th>Type</th>
+                    <th>Hash_5s</th>
+                    <th>Hash_av</th>
+                    <th>ChainACS</th>
+                    <th>Temp1</th>
+                    <th>pools</th>
+                    <th>state</th>
+                    <th>Comments</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <p id="err-lastUpdated"></p>
+        </div>
+    </div>
+    <div id="tab-3" class="tab-content">
+        <div id="lowhash-wrapper">
+            <div id="lowhash-minerInfo">
+                <h2>NaN</h2>
+                <table>
+                    <thead>
+                    <th>Name</th>
+                    <th>Host</th>
+                    <th>User</th>
+                    <th>Uptime</th>
+                    <th>Type</th>
+                    <th>Hash_5s</th>
+                    <th>Hash_av</th>
+                    <th>ChainACS</th>
+                    <th>Temp1</th>
+                    <th>pools</th>
+                    <th>state</th>
+                    <th>Comments</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <p id="lowhash-minerSummary">
+            <p id="lowhash-lastUpdated"></p>
+            </p>
+        </div>
+    </div>
+    <div id="tab-4" class="tab-content">
+        <div id="offline-wrapper">
+            <div id="offline-minerInfo">
+                <h2>NaN</h2>
+                <table>
+                    <thead>
+                    <th>Name</th>
+                    <th>Host</th>
+                    <th>User</th>
+                    <th>Uptime</th>
+                    <th>Type</th>
+                    <th>Hash_5s</th>
+                    <th>Hash_av</th>
+                    <th>ChainACS</th>
+                    <th>Temp1</th>
+                    <th>pools</th>
+                    <th>state</th>
+                    <th>Comments</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <p id="offline-lastUpdated"></p>
+        </div>
+    </div>
+    <div id="tab-5" class="tab-content">
+        <div id="find">
+            <input type="text" name="find" value="" />
+            <input type="submit" value="find" class="find-btn" />
+        </div>
+        <div id="find-wrapper">
+            <div id="find-minerInfo">
+                <h2>NaN</h2>
+                <table>
+                    <thead>
+                    <th>Name</th>
+                    <th>Host</th>
+                    <th>User</th>
+                    <th>Uptime</th>
+                    <th>Type</th>
+                    <th>Hash_5s</th>
+                    <th>Hash_av</th>
+                    <th>ChainACS</th>
+                    <th>Temp1</th>
+                    <th>pools</th>
+                    <th>state</th>
+                    <th>Comments</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <p id="find-lastUpdated"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

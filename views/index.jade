@@ -1,0 +1,137 @@
+extends layout
+
+block content
+  // Wrapper
+  .container
+    ul.tabs
+      li.tab-link.current(data-tab='tab-1') 전체 모니터
+      li.tab-link(data-tab='tab-2') 에러 모니터
+      li.tab-link(data-tab='tab-3') 낮은 해시 모니터
+      li.tab-link(data-tab='tab-4') 오프라인 모니터
+      li.tab-link(data-tab='tab-5') 검색
+    #tab-1.tab-content.current
+      #wrapper
+         #minerDashBoard
+            h2= title
+            ul.dashboard
+                li.info-total 전체 마이너:
+                li.info-manage 관리 마이너:
+                li.info-error 에러 마이너:
+                li.info-warning 워닝 마이너:
+                li.info-offline 오프라인 마이너:
+         //Miner info
+         #minerInfo
+
+            table
+                thead
+                    th Name
+                    th Host
+                    th User
+                    th Uptime
+                    th Type
+                    th Hash_5s
+                    th Hash_av
+                    th ChainACS
+                    th Temp1
+                    th pools
+                    th state
+                    th Comments
+                tbody
+        p#lastUpdated
+        // /Miner info
+      // /Wrapper
+    #tab-2.tab-content
+      #err-wrapper
+        // Miner info
+        #err-minerInfo
+            h2= err-title
+            table
+                thead
+                    th Name
+                    th Host
+                    th User
+                    th Uptime
+                    th Type
+                    th Hash_5s
+                    th Hash_av
+                    th ChainACS
+                    th Temp1
+                    th pools
+                    th state
+                    th Comments
+                tbody
+          p#err-lastUpdated
+        // /Miner info
+      // /Wrapper
+    #tab-3.tab-content
+      #lowhash-wrapper
+        // Miner info
+        #lowhash-minerInfo
+            h2= lowhash-title
+            table
+                thead
+                    th Name
+                    th Host
+                    th User
+                    th Uptime
+                    th Type
+                    th Hash_5s
+                    th Hash_av
+                    th ChainACS
+                    th Temp1
+                    th pools
+                    th state
+                    th Comments
+                tbody
+          p#lowhash-minerSummary
+          p#lowhash-lastUpdated
+        // /Miner info
+      // /Wrapper
+    #tab-4.tab-content
+      #offline-wrapper
+        // Miner info
+        #offline-minerInfo
+            h2= offline-title
+            table
+                thead
+                    th Name
+                    th Host
+                    th User
+                    th Uptime
+                    th Type
+                    th Hash_5s
+                    th Hash_av
+                    th ChainACS
+                    th Temp1
+                    th pools
+                    th state
+                    th Comments
+                tbody
+          p#offline-lastUpdated
+        // /Miner info
+      // /Wrapper
+
+    #tab-5.tab-content
+        #find
+            input(type="text" name="find" value="")
+            input.find-btn(type="submit" value="find")
+        #find-wrapper
+          // Miner info
+          #find-minerInfo
+            h2= find-title
+            table
+              thead
+                th Name
+                th Host
+                th User
+                th Uptime
+                th Type
+                th Hash_5s
+                th Hash_av
+                th ChainACS
+                th Temp1
+                th pools
+                th state
+                th Comments
+              tbody
+            p#find-lastUpdated
