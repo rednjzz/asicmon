@@ -64,6 +64,9 @@ function worker() {
             case "B3":
                 hashrates = Number(hr).toFixed(2) + '&nbsp;H/s';
                 break;
+            case "Z1":
+                hashrates = Number(hr/1000).toFixed(2) + '&nbsp;GH/s';
+                break;
             default:
                 hashrates = 'No Type Matched'
         }

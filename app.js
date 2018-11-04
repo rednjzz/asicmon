@@ -127,7 +127,7 @@ config.miners.forEach(function(item, i){
                     minerData = header;
                 }
 
-                d = bmminerAPIParse(minerData);
+                d = bmminerAPIParse(minerData,c.type);
                 //console.log(countACS(d.chain_acs));
                 //console.log(m.data);
 
@@ -150,7 +150,7 @@ config.miners.forEach(function(item, i){
                     "offline": c.offline,
                     "error": null
                 };
-                //console.log(miners.json[i].temp1);
+               // console.log(miners.json[i].hashrate_5s);
             }
 
             logger.info(m.name + ': connection closed');
@@ -233,17 +233,33 @@ config.miners.forEach(function(item, i){
     }
 });
 
-function bmminerAPIParse(data){
+function bmminerAPIParse(data,minerType){
     let minerInfo = {chain_acs:[]};
     minerInfo.Elapsed = data.summary[0].SUMMARY[0]['Elapsed'];
-    minerInfo.GHS_5s = data.summary[0].SUMMARY[0]['GHS 5s'];
-    minerInfo.GHS_av = data.summary[0].SUMMARY[0]['GHS av'];
-
     minerInfo.URL = data.pools[0].POOLS[0]['URL'];
     minerInfo.User = (data.pools[0].POOLS[0]['User']).substring(0,20);
     minerInfo.LastShareTime = data.pools[0].POOLS[0]['Last Share Time'];
+/*
+    if(type){
+        minerInfo.Type = type;
+    } else{
+        minerInfo.Type = data.stats[0].STATS[0]['Type'];
+    }
+    */
+    if(minerType === 'ZigZ1'){
+        minerInfo.Type = 'ZigZ1';
 
-    minerInfo.Type = data.stats[0].STATS[0]['Type'];
+        minerInfo.GHS_5s = data.stats[0].STATS[0]['MHS 30S'];
+        minerInfo.GHS_av = data.stats[0].STATS[0]['MHS 5m'];
+        //minerInfo.GHS_5s = data.summary[0].SUMMARY[0]['MHS av'];
+        //minerInfo.GHS_av = data.summary[0].SUMMARY[0]['MHS 5s'];
+
+    } else{
+        minerInfo.Type = data.stats[0].STATS[0]['Type'];
+
+        minerInfo.GHS_5s = data.summary[0].SUMMARY[0]['GHS 5s'];
+        minerInfo.GHS_av = data.summary[0].SUMMARY[0]['GHS av'];
+    }
     minerInfo.temp_max = data.stats[0].STATS[1]['temp_max'];
     switch(minerInfo.Type){
         case "Antminer S9":
@@ -456,6 +472,29 @@ function bmminerAPIParse(data){
             minerInfo.chain_rate3 = data.stats[0].STATS[1]['chain_rate4'];
             minerInfo.fan1 = data.stats[0].STATS[1]['fan3'];
             minerInfo.fan2 = data.stats[0].STATS[1]['fan6'];
+            break;
+        case "ZigZ1":
+            minerInfo.Type = 'Z1';
+
+            minerInfo.temp1_1 = data.stats[0].STATS[0]['CH1']['Temperature'];
+            minerInfo.temp1_2 = data.stats[0].STATS[0]['CH2']['Temperature'];
+            minerInfo.temp1_3 = data.stats[0].STATS[0]['CH3']['Temperature'];
+            minerInfo.temp1_4 = data.stats[0].STATS[0]['CH4']['Temperature'];
+            minerInfo.temp1 = minerInfo.temp1_1 + ';' + minerInfo.temp1_2 + ';' + minerInfo.temp1_3+ ';' + minerInfo.temp1_4;
+            minerInfo.temp2 = ' ; ; ;';
+            minerInfo.chain_acn1 = 0;
+            minerInfo.chain_acn2 = 0;
+            minerInfo.chain_acn3 = 0;
+
+            minerInfo.chain_acs[0] = 'x';
+            minerInfo.chain_acs[1] = 'x';
+            minerInfo.chain_acs[2] = 'x';
+
+
+            minerInfo.chain_rateideal = 6000;
+
+            minerInfo.fan1 = data.stats[0].STATS[0]['Fan In'];
+            minerInfo.fan2 = data.stats[0].STATS[0]['Fan Out'];
             break;
 
         default:
